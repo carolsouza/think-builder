@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="style3.css" />
+
+        <link rel="icon" href="imagens/favicon.ico"/>
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+        <title>Login | Register</title>
+    </head>
+    <body>
+      <div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="">
+    <h1>Crie Sua Conta</h1>
+    <div class="social-container">
+        <a href="#" class="social"><img src="imagens/facebook.png"></a>
+        <a href="#" class="social"><img src="imagens/whatsapp.png"></a>
+        <a href="#" class="social"><img src="imagens/instagram.png"></a>
+    </div>
+    <span>Registre-se com seu email</span>
+    <input type="text" name="name" placeholder="Digite seu Nome">
+    <input type="email" name="email" placeholder="Digite seu Email">
+    <input type="password" name="password" placeholder="Digite sua Senha">
+    <button>Registrar-se</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+    <form action="#">
+        <h1>Logar-se</h1>
+        <div class="social-container">
+        <a href="#" class="social"><img src="imagens/facebook.png"></a>
+        <a href="#" class="social"><img src="imagens/whatsapp.png"></a>
+        <a href="#" class="social"><img src="imagens/instagram.png"></a>
+    </div>
+    <span>Entre com sua conta</span>
+    <input type="email" name="email" placeholder="Digite seu Email">
+    <input type="password" name="password" placeholder="Digite sua senha">
+    <a href="#">Nao tem conta? registre-se</a>
+
+    <button>Logar</button>
+    </form>
+</div>
+<div class="overlay-container">
+    <div class="overlay">
+        <div class="overlay-panel overlay-left">
+            <h1>Bem-vindo!</h1>
+            <p>Registre-se ao lado.</p>
+            <button class="ghost" id="signIn">Registrar-se</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+            <h1>Ola!</h1>
+            <p>Aproveite o nosso Site.</p>
+            <button class="ghost" id="signUp">Logar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
+
+      <script type="text/javascript">
+          const singUpButton = document.getElementById('singUp');
+          const singUpButton = document.getElementById('singIn');
+          const container = document.getElementById('container');
+
+          singUpButton.addEventListener('click',() =>{
+            container.classList.add("right-panel-active");
+          });
+
+           singInButton.addEventListener('click',() =>{
+            container.classList.remove("right-panel-active");
+          });
+
+      </script>
+
+    
+
+        <!--JavaScript-->
+        <script src="js/login.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
