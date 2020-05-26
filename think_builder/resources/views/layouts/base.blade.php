@@ -26,11 +26,12 @@
 
         <!-- carrega o css -->
         @section('css')
-            <link rel="stylesheet" type="text/css" href="/css/app.css">
+            <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="/css/animate.css">
             <link rel="stylesheet" type="text/css" href="/css/alertify.min.css">
             <link rel="stylesheet" type="text/css" href="/css/default.min.css">
             <link rel="stylesheet" type="text/css" href="/css/custom.css">
+            <!-- <link rel="stylesheet" type="text/css" href="/css/estilo.css"> -->
 
             <!-- css externo -->
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -38,8 +39,11 @@
 
         <!-- carrega os estilos  -->
         @section('styles')
-            <style>
-                .navbar-header .logo-header {
+             <style>
+                 nav.navbar-transparente{
+                    background: rgba(0,0,0,0.8);
+                }
+                /*.navbar-header .logo-header {
                     margin-left: 15px;
                     margin-top: 14px;
                 }
@@ -60,7 +64,7 @@
                     flex: 1 100%;
                     height: 80px;
                     z-index: 1;
-                }
+                }*/
 
                 .conteudo {
                     text-align: left;
@@ -94,6 +98,7 @@
                 body {
                     padding: 0px;
                     margin:0px;
+                    background: linear-gradient(50deg, #40186a, #ce1c20);
                     overflow: hidden;
                 }
 
