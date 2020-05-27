@@ -43,38 +43,25 @@
                  nav.navbar-transparente{
                     background: rgba(0,0,0,0.8);
                 }
-                /*.navbar-header .logo-header {
-                    margin-left: 15px;
-                    margin-top: 14px;
-                }
-
-                .navbar-header .logo-header img {
-                    height: 50px;
-                }
-
-                .wrapper {
-                    display: flex;
-                    flex-flow: row wrap;
-                    font-weight: bold;
-                    text-align: center;
-                }
-
-                .header {
-                    text-align: left;
-                    flex: 1 100%;
-                    height: 80px;
-                    z-index: 1;
-                }*/
 
                 .conteudo {
                     text-align: left;
                     height: calc(100vh - 80px);
                     overflow: auto;
+                    flex: 1 0 auto;
                 }
 
                 .aside-1 {
                     flex: 1 60px;
                 }
+
+                /* body {
+                    padding: 0px;
+                    margin:0px;
+                    height: 100%;
+                    background: linear-gradient(50deg, #40186a, #ce1c20);
+                    overflow: hidden;
+                } */
 
                 @media all and (min-width: 800px) {
                     .aside-1 {
@@ -94,41 +81,26 @@
                         order: 4;
                     }
                 }
-
-                body {
-                    padding: 0px;
-                    margin:0px;
-                    background: linear-gradient(50deg, #40186a, #ce1c20);
-                    overflow: hidden;
-                }
-
             </style>
         @show
     </head>
 
     <body>
-        <div class="wrapper">
-            <header class="header">
+        <header class="header">
             <aside class="aside aside-1">
                 @include('layouts/header')
             </aside>
-                <div class="navbar-header">
-                    <div class="logo-header">
-                        <a href="/"><img src="/web/media/img/logo-vanguarda-top.png" alt=""></a>
-                    </div>
-                </div>
-            </header>
+        </header>
 
-            <article class="conteudo col-md-12">
-                @section('dashboard')
-
-                @show
-            </article>
-
-            @section('modal')
+        <div class="content">
+            @section('dashboard')
 
             @show
         </div>
+
+        @section('modal')
+
+        @show
 
         <footer class="footer bg-dark text-light">
             <p>Desenvolvido por Jurid T.I. - Todos os direitos reservados.</p>

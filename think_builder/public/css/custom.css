@@ -8,48 +8,85 @@
     outline: none;
 }
 
-html {
+/* html {
     height: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+    height: 100vh;
 }
 
 .content {
-    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-    padding: 20px;
+    flex: 1 0 auto;
 }
 
 .footer {
-    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    flex-shrink: 0;
     padding: 20px;
+} */
+
+html {
+	height: 100%;
 }
 
-.icones-sociais {
-    font-size: 25px;
-    color: black !important;
+body {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(50deg, #40186a, #ce1c20);
+	height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+	overflow-wrap: break-word;
 }
 
-.face-hover:hover {
-    color: #3b5998 !important;
+.content {
+	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
+	width: 100%;
 }
 
-.twitter-hover:hover {
-    color: #1da1f2 !important;
+.footer {
+	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
 }
 
-.whats-hover:hover {
-    color: #25d366 !important;
+.h1-custom{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
-.left-link {
-    padding-left: 0px !important;
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-widht: 575.98px) {
+    
 }
 
-.index-title {
-    padding-top: 20px;
-    margin-bottom: 90px;
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98) {
+    h1{
+        font-size: 3em;
+    }
+}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1{
+		font-size: 3em;
+	}
+}
+
+/*Large devices (desktops, 992px e maiores)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 4em;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {
+    h1{
+        font-size: 5em;
+    }
 }
