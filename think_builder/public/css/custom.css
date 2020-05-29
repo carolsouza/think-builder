@@ -58,6 +58,12 @@ body {
     font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-widht: 575.98px) {
     
